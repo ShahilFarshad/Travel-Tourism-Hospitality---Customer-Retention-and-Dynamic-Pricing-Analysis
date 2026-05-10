@@ -28,13 +28,14 @@ The project was developed using Python, Google Colab, Pandas, Matplotlib, Seabor
 - ## Technologies Used
 
 - Python
-- Google Colab
+- Jupyter Notebook
 - Pandas
 - NumPy
 - Matplotlib
 - Seaborn
 - Scikit-learn
 - GitHub
+- Power BI
 
 - ## Dataset Information
 
