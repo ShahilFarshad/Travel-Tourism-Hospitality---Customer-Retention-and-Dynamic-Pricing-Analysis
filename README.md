@@ -179,7 +179,8 @@ Machine learning models were developed to predict booking cancellations and supp
 - Lead time vs cancellation
 - Repeat vs new guest analysis
 
-<img width="100%" src="customer_retention_dashboard.png">
+<img width="1432" height="792" alt="Customer Retention Dashboard" src="https://github.com/user-attachments/assets/9cc27dc2-0b74-480d-be27-d60b35bea637" />
+
 
 ---
 
@@ -192,7 +193,8 @@ Machine learning models were developed to predict booking cancellations and supp
 - Market segment pricing
 - Revenue impact analysis
 
-<img width="100%" src="dynamic_pricing_dashboard.png">
+<img width="1432" height="795" alt="Dynamic Pricing Dashboard" src="https://github.com/user-attachments/assets/c56ccd2c-99af-4bbe-94ff-ad47cc812796" />
+
 
 ---
 
