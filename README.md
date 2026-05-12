@@ -1,428 +1,227 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Retention & Dynamic Pricing Analysis</title>
+<div align="center">
 
-    <style>
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            margin:0;
-            padding:0;
-            background:#0f172a;
-            color:#f1f5f9;
-            line-height:1.7;
-        }
+#  Customer Retention & Dynamic Pricing Analysis
 
-        header{
-            background:linear-gradient(135deg,#0ea5e9,#7c3aed);
-            padding:60px 20px;
-            text-align:center;
-        }
+### Hospitality Analytics | Machine Learning | Business Intelligence
 
-        header h1{
-            font-size:48px;
-            margin-bottom:10px;
-        }
+</div>
 
-        header p{
-            font-size:20px;
-        }
+---
 
-        .container{
-            width:90%;
-            max-width:1200px;
-            margin:auto;
-            padding:40px 0;
-        }
+#  Project Overview
 
-        section{
-            background:#1e293b;
-            margin-bottom:30px;
-            padding:30px;
-            border-radius:12px;
-            box-shadow:0 4px 15px rgba(0,0,0,0.3);
-        }
+The hospitality industry faces significant revenue loss due to customer cancellations, poor demand forecasting, and inefficient pricing strategies.
 
-        h2{
-            color:#38bdf8;
-            border-bottom:2px solid #334155;
-            padding-bottom:10px;
-            margin-bottom:20px;
-        }
+This project analyzes hotel booking data using **Python, Exploratory Data Analysis (EDA), Machine Learning, and Power BI** to identify cancellation patterns, optimize pricing strategies, and improve customer retention.
 
-        h3{
-            color:#a78bfa;
-            margin-top:25px;
-        }
+---
 
-        ul{
-            padding-left:20px;
-        }
+#  Executive Problem Statement
 
-        table{
-            width:100%;
-            border-collapse:collapse;
-            margin-top:20px;
-        }
+In the highly competitive hospitality sector, hotels and travel agencies suffer from:
 
-        table th,
-        table td{
-            border:1px solid #334155;
-            padding:12px;
-            text-align:left;
-        }
+- High booking cancellation rates
+- Revenue leakage
+- Unoptimized room pricing
+- Poor demand forecasting
 
-        table th{
-            background:#334155;
-            color:#38bdf8;
-        }
+Traditional systems lack predictive intelligence to:
 
-        code{
-            background:#0f172a;
-            color:#38bdf8;
-            padding:3px 6px;
-            border-radius:5px;
-        }
+- Predict customer cancellations
+- Adjust room pricing dynamically based on demand and seasonality
 
-        pre{
-            background:#0f172a;
-            padding:20px;
-            overflow-x:auto;
-            border-radius:10px;
-        }
+This project provides analytical insights to support:
 
-        .highlight{
-            color:#22c55e;
-            font-weight:bold;
-        }
+- Dynamic pricing strategies
+- Customer retention campaigns
+- Revenue optimization
+- Demand forecasting
 
-        .dashboard{
-            margin-top:20px;
-            text-align:center;
-        }
+---
 
-        .dashboard img{
-            width:100%;
-            border-radius:12px;
-            margin-top:15px;
-            border:2px solid #334155;
-        }
+#  Business Objectives
 
-        footer{
-            background:#020617;
-            text-align:center;
-            padding:20px;
-            color:#94a3b8;
-        }
-    </style>
-</head>
+- Reduce customer cancellation rates
+- Improve customer retention
+- Optimize Revenue Per Available Room (RevPAR)
+- Understand seasonal demand trends
+- Enable data-driven pricing decisions
 
-<body>
+---
 
-<header>
-    <h1>🏨 Customer Retention & Dynamic Pricing Analysis</h1>
-    <p>Hospitality Analytics | Machine Learning | Business Intelligence</p>
-</header>
+#  Key Performance Indicators (KPIs)
 
-<div class="container">
+| KPI | Description |
+|------|-------------|
+| Total Bookings | Total hotel reservations |
+| Cancellation Rate | Percentage of cancelled bookings |
+| Average Lead Time | Average days before arrival |
+| Average ADR | Average Daily Room Rate |
+| Revenue Trends | Revenue performance over time |
+| Retention Score | Repeat guest contribution |
 
-    <section>
-        <h2>📌 Project Overview</h2>
+---
 
-        <p>
-            The hospitality industry faces significant revenue loss due to customer cancellations,
-            poor demand forecasting, and inefficient pricing strategies.
-        </p>
+#  Dataset Information
 
-        <p>
-            This project analyzes hotel booking data using 
-            <span class="highlight">Python, Machine Learning, EDA, and Power BI</span>
-            to identify cancellation patterns, optimize pricing strategies, and improve customer retention.
-        </p>
-    </section>
+| File | Description |
+|------|-------------|
+| `Uncleaned hotel_bookings.csv` | Raw hotel booking dataset |
+| `cleaned_hotel_bookings.csv` | Processed and cleaned dataset |
+| `EDA_hotel_bookings.ipynb` | Exploratory Data Analysis notebook |
+| `ML_customer_retention and dynamic pricing.ipynb` | Machine Learning notebook |
 
-    <section>
-        <h2>🎯 Executive Problem Statement</h2>
+---
 
-        <p>
-            Hotels and travel agencies struggle with:
-        </p>
+#  Technologies Used
 
-        <ul>
-            <li>High booking cancellation rates</li>
-            <li>Revenue leakage</li>
-            <li>Unoptimized room pricing</li>
-            <li>Poor demand forecasting</li>
-        </ul>
+##  Programming & Analytics
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
 
-        <p>
-            Traditional systems lack predictive intelligence to anticipate customer cancellations
-            and dynamically adjust room rates based on market demand and seasonality.
-        </p>
+##  Dashboard & Visualization
+- Power BI
 
-        <p>
-            This project provides analytical insights to support:
-        </p>
+##  Development Environment
+- Jupyter Notebook
+  
 
-        <ul>
-            <li>Dynamic pricing strategies</li>
-            <li>Customer retention campaigns</li>
-            <li>Revenue optimization</li>
-            <li>Demand forecasting</li>
-        </ul>
-    </section>
+---
 
-    <section>
-        <h2>🎯 Business Objectives</h2>
+#  Data Cleaning Process
 
-        <ul>
-            <li>Reduce customer cancellation rates</li>
-            <li>Improve customer retention</li>
-            <li>Optimize Revenue Per Available Room (RevPAR)</li>
-            <li>Understand seasonal demand trends</li>
-            <li>Enable data-driven pricing decisions</li>
-        </ul>
-    </section>
+The raw dataset contained:
 
-    <section>
-        <h2>📊 Key Performance Indicators (KPIs)</h2>
+- Missing values
+- Duplicate records
+- Incorrect data types
+- Categorical inconsistencies
 
-        <table>
-            <tr>
-                <th>KPI</th>
-                <th>Description</th>
-            </tr>
+##  Cleaning Steps Performed
 
-            <tr>
-                <td>Total Bookings</td>
-                <td>Total hotel reservations</td>
-            </tr>
+- Removed duplicates
+- Handled missing values
+- Converted date columns
+- Encoded categorical variables
+- Feature engineering
+- Outlier handling
 
-            <tr>
-                <td>Cancellation Rate</td>
-                <td>Percentage of cancelled bookings</td>
-            </tr>
+##  Example Transformations
 
-            <tr>
-                <td>Average Lead Time</td>
-                <td>Average days before arrival</td>
-            </tr>
-
-            <tr>
-                <td>Average ADR</td>
-                <td>Average Daily Room Rate</td>
-            </tr>
-
-            <tr>
-                <td>Revenue Trends</td>
-                <td>Revenue performance over time</td>
-            </tr>
-
-            <tr>
-                <td>Retention Score</td>
-                <td>Repeat guest contribution</td>
-            </tr>
-        </table>
-    </section>
-
-    <section>
-        <h2>🗂️ Dataset Information</h2>
-
-        <table>
-            <tr>
-                <th>File</th>
-                <th>Description</th>
-            </tr>
-
-            <tr>
-                <td>Uncleaned hotel_bookings.csv</td>
-                <td>Raw hotel booking dataset</td>
-            </tr>
-
-            <tr>
-                <td>cleaned_hotel_bookings.csv</td>
-                <td>Processed and cleaned dataset</td>
-            </tr>
-
-            <tr>
-                <td>EDA_hotel_bookings.ipynb</td>
-                <td>Exploratory Data Analysis notebook</td>
-            </tr>
-
-            <tr>
-                <td>ML_customer_retention and dynamic pricing.ipynb</td>
-                <td>Machine Learning notebook</td>
-            </tr>
-        </table>
-    </section>
-
-    <section>
-        <h2>⚙️ Technologies Used</h2>
-
-        <ul>
-            <li>Python</li>
-            <li>Pandas</li>
-            <li>NumPy</li>
-            <li>Matplotlib</li>
-            <li>Seaborn</li>
-            <li>Scikit-learn</li>
-            <li>Power BI</li>
-            <li>Jupyter Notebook</li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>🧹 Data Cleaning Process</h2>
-
-        <p>
-            The dataset contained missing values, duplicate records,
-            incorrect data types, and categorical inconsistencies.
-        </p>
-
-        <h3>Cleaning Steps</h3>
-
-        <ul>
-            <li>Handled missing values</li>
-            <li>Removed duplicates</li>
-            <li>Converted date columns</li>
-            <li>Encoded categorical variables</li>
-            <li>Performed feature engineering</li>
-            <li>Handled outliers</li>
-        </ul>
-
-        <h3>Example Transformations</h3>
-
-<pre>
-<code>
+```python
 df['arrival_date_month'] = pd.to_datetime(
     df['arrival_date_month'],
     format='%B'
 ).dt.month
-</code>
-</pre>
+```
 
-<pre>
-<code>
+```python
 df = pd.get_dummies(
     df,
     columns=['hotel', 'deposit_type', 'customer_type'],
     drop_first=True
 )
-</code>
-</pre>
+```
 
-    </section>
+---
 
-    <section>
-        <h2>📈 Exploratory Data Analysis (EDA)</h2>
+#  Exploratory Data Analysis (EDA)
 
-        <h3>Key Insights</h3>
+##  Key Insights
 
-        <ul>
-            <li>Longer lead times resulted in higher cancellation rates</li>
-            <li>Transient customers dominated hotel bookings</li>
-            <li>Corporate customers showed stronger retention</li>
-            <li>ADR increased during peak seasons</li>
-            <li>Weekend pricing improved profitability</li>
-        </ul>
-    </section>
+### 🔹 Cancellation Patterns
+- Longer lead times resulted in higher cancellation probability
+- Certain customer segments showed higher churn
+- Non-refundable deposits reduced cancellations
 
-    <section>
-        <h2>🤖 Machine Learning Analysis</h2>
+### 🔹 Seasonal Demand Trends
+- Peak booking periods were identified
+- ADR increased during high-demand seasons
+- Weekend pricing improved profitability
 
-        <p>
-            Machine learning models were developed to predict booking cancellations
-            and support pricing optimization strategies.
-        </p>
+### 🔹 Market Segment Analysis
+- Online Travel Agencies generated the highest bookings
+- Corporate customers showed better retention
+- Group bookings had lower cancellation rates
 
-        <h3>Models Used</h3>
+---
 
-        <ul>
-            <li>Logistic Regression</li>
-            <li>Decision Tree Classifier</li>
-            <li>Random Forest Classifier</li>
-        </ul>
+#  Machine Learning Analysis
 
-        <h3>Features Used</h3>
+Machine learning models were developed to predict booking cancellations and support pricing optimization.
 
-        <ul>
-            <li>Lead Time</li>
-            <li>ADR</li>
-            <li>Deposit Type</li>
-            <li>Customer Type</li>
-            <li>Market Segment</li>
-        </ul>
-    </section>
+##  Models Used
+- Logistic Regression
+- Decision Tree Classifier
+- Random Forest Classifier
 
-    <section>
-        <h2>📊 Power BI Dashboards</h2>
+##  Features Used
+- Lead Time
+- ADR
+- Deposit Type
+- Customer Type
+- Market Segment
 
-        <h3>1️⃣ Customer Retention Dashboard</h3>
+---
 
-        <ul>
-            <li>Cancellation trends</li>
-            <li>Customer segmentation</li>
-            <li>Retention analysis</li>
-            <li>Lead time vs cancellation</li>
-        </ul>
+#  Power BI Dashboards
 
-        <div class="dashboard">
-            <img src="customer_retention_dashboard.png" alt="Customer Retention Dashboard">
-        </div>
+# 1️ Customer Retention Dashboard
 
-        <h3>2️⃣ Dynamic Pricing Dashboard</h3>
+## Dashboard Features
+- Cancellation trends
+- Customer segmentation
+- Retention analysis
+- Lead time vs cancellation
+- Repeat vs new guest analysis
 
-        <ul>
-            <li>Revenue trends</li>
-            <li>ADR trends</li>
-            <li>Seasonality analysis</li>
-            <li>Market segment pricing</li>
-        </ul>
+<img width="100%" src="customer_retention_dashboard.png">
 
-        <div class="dashboard">
-            <img src="dynamic_pricing_dashboard.png" alt="Dynamic Pricing Dashboard">
-        </div>
+---
 
-    </section>
+# 2️ Dynamic Pricing Dashboard
 
-    <section>
-        <h2>📌 Business Recommendations</h2>
+## Dashboard Features
+- Revenue trends
+- ADR trends
+- Seasonality analysis
+- Market segment pricing
+- Revenue impact analysis
 
-        <h3>Customer Retention</h3>
+<img width="100%" src="dynamic_pricing_dashboard.png">
 
-        <ul>
-            <li>Implement loyalty programs</li>
-            <li>Use personalized customer campaigns</li>
-            <li>Reduce cancellation risk through deposit strategies</li>
-        </ul>
+---
 
-        <h3>Dynamic Pricing</h3>
+#  Business Recommendations
 
-        <ul>
-            <li>Apply seasonal pricing adjustments</li>
-            <li>Increase ADR during high-demand periods</li>
-            <li>Use predictive demand forecasting</li>
-        </ul>
-    </section>
+##  Customer Retention Strategy
+- Implement loyalty programs
+- Use personalized customer campaigns
+- Reduce cancellation risk through deposit strategies
 
-    <section>
-        <h2>🚀 Future Enhancements</h2>
+##  Dynamic Pricing Strategy
+- Apply seasonal pricing adjustments
+- Increase ADR during high-demand periods
+- Use predictive demand forecasting
 
-        <ul>
-            <li>Real-time pricing engine</li>
-            <li>Advanced forecasting models</li>
-            <li>Deep learning churn prediction</li>
-            <li>Live booking system integration</li>
-        </ul>
-    </section>
+---
 
-    <section>
-        <h2>📁 Project Structure</h2>
+#  Future Enhancements
 
-<pre>
-<code>
+- Real-time pricing engine
+- Advanced forecasting models
+- Deep learning churn prediction
+- Live booking system integration
+
+---
+
+#  Project Structure
+
+```bash
 project/
 │
 ├── data/
@@ -438,24 +237,36 @@ project/
 │   ├── Customer Retention Dashboard.pbix
 │   └── Dynamic Pricing Dashboard.pbix
 │
-└── README.html
-</code>
-</pre>
+└── README.md
+```
 
-    </section>
+---
 
-    <section>
-        <h2>👨‍💻 Author</h2>
+#  Learning Outcomes
 
-        <p><strong>Shahil Farshad</strong></p>
-        <p>Data Analytics & Business Intelligence Enthusiast</p>
-    </section>
+Through this project, the following skills were developed:
 
-</div>
+- Data cleaning and preprocessing
+- Exploratory Data Analysis
+- Feature engineering
+- Machine learning modeling
+- Dashboard development
+- Business intelligence reporting
+- Hospitality analytics
 
-<footer>
-    © 2026 Customer Retention & Dynamic Pricing Analysis Project
-</footer>
 
-</body>
-</html>
+
+#  Conclusion
+
+This project demonstrates how data analytics and machine learning can transform hotel booking data into strategic business intelligence.
+
+By combining predictive analytics with interactive dashboards, the project supports:
+
+- Customer retention
+- Revenue optimization
+- Dynamic pricing
+- Demand forecasting
+
+This solution creates a strong analytical foundation for modern hospitality revenue management systems.
+
+```
